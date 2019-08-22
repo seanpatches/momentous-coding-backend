@@ -1,8 +1,7 @@
-const app = require('./lib/app.js');
-
+const app = require('./lib/app');
 const PORT = 8888;
 
-app.list(PORT, () => {
+app.listen(PORT, () => {
   //eslint-disable-next-line no-console
   console.log(`App running on port ${PORT}`);
-})
+});
